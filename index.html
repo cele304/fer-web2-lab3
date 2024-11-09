@@ -1,0 +1,23 @@
+<!--zadatak sadrži jednu HTML5 stranicu, jednu CSS datoteku i jednu JavaScript datoteku.-->
+<!--deklaracije struktura, objekata, funkcija kao i pozivi funkcija su detaljno komentirani i objašnjeni-->
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="gameTitle">Breakout</h1>  
+  <div id="config">
+    <h2>Postavke igre</h2>
+    <label>Broj redova cigli: <input id="brickRows" type="number" value="5"></label><br>
+    <label>Broj stupaca cigli: <input id="brickColumns" type="number" value="8"></label><br>
+    <label>Brzina loptice: <input id="ballSpeed" type="number" value="12"></label><br>
+    <button onclick="startGame()">Pokreni igru</button>
+  </div>
+  <canvas id="gameCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

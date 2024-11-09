@@ -1,0 +1,113 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2e3b4e; /*Canvas objekt je ove boje pozadine tako da se vidi sjencanje palice i da je kontrast dovoljno dobar za prikaz*/
+  color: #f0e68c; 
+  font-family: "Courier New", Courier, monospace; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#gameTitle {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ff6347; 
+  font-family: "Courier New", Courier, monospace;
+  font-size: 48px; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0 #2c2c2c; 
+  margin: 0;
+  padding: 10px;
+  border: 3px solid #ff6347; 
+  border-radius: 8px;
+  background-color: #2c2c2c;
+}
+
+
+
+#config {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2c2c2c;
+  border: 5px solid #ff6347; 
+  padding: 20px;
+  text-align: left; 
+  border-radius: 8px;
+  color: #f0e68c;
+  width: 300px;
+}
+
+#config h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+input[type="number"] {
+  background-color: #444;
+  color: #f0e68c;
+  border: 1px solid #ff6347;
+  padding: 5px;
+  width: 60px; 
+  font-family: inherit;
+  text-align: center;
+}
+
+
+button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #e55347;
+}
+
+canvas {
+  border: 10px solid #ff6347;                   /*Canvas objekt ima vidljivi rub od 10px*/
+  box-shadow: 0 0 20px rgba(255, 99, 71, 0.6);
+}
+
+
+input[type="number"]:hover {
+  border-color: #e55347;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff6347;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}
